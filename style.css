@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #025464;
+}
+
+/* navbar dan jumbotron */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 3px 3px 2px 1px #e8aa42;
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+  background-color: #025464;
+}
+
+header a {
+  text-decoration: none;
+  padding: 10px;
+  color: #e8aa42;
+}
+
+header a:hover {
+  color: white;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li input {
+  font-size: 15px;
+  background-color: #f8f1f1;
+  box-shadow: 0.3px 0.3px 0.3px 0.3px #e8aa42;
+}
+
+.navbar-toggle {
+  display: none; /* Sembunyikan tombol burger di desktop */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin-bottom: 4px;
+}
+
+/* konten */
+#contentGame {
+  display: flex;
+  flex-direction: column;
+}
+
+#contentUtama {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e8aa42;
+}
+
+#logo img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 1px #e8aa42;
+  margin-top: 100px;
+  max-width: 100%;
+}
+
+img {
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+h3 {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #e8aa42;
+}
+
+#listgame a {
+  text-decoration: none;
+  color: #e8aa42;
+}
+
+p {
+  color: #f8f1f1;
+}
+
+#content {
+  padding: 15px;
+  margin: 10px;
+}
+
+#listgame > * {
+  margin: 30px 0;
+  text-align: justify;
+}
+
+#game1 > *,
+#game2 > *,
+#game3 > *,
+#game4 > * {
+  margin-left: 10px;
+}
+
+#game1 h3:hover,
+#game2 h3:hover,
+#game3 h3:hover,
+#game4 h3:hover {
+  color: white;
+}
+
+aside {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #e8aa42;
+  text-align: center;
+}
+
+aside .fa {
+  margin: 10px;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: #e8aa42;
+  border-radius: 50px;
+}
+
+/* button lihat lebih */
+.lihatLebih {
+  margin-left: 10px;
+  text-align: start;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.lihatLebih button {
+  background-color: #e8aa42;
+  font-weight: bold;
+}
+
+#panahBawah {
+  font-size: 20px;
+  padding: 10px;
+}
+
+#dataDiri img {
+  margin: 15px 0;
+  width: 100px;
+  height: 100px;
+}
+
+/* Footer */
+footer {
+  background-color: #e8aa42;
+  text-align: center;
+  padding: 15px;
+}
+
+footer .fa {
+  font-size: 25px;
+}
+
+footer h2 {
+  padding-bottom: 25px;
+}
+
+footer p {
+  margin-top: 15px;
+  color: black;
+}
+
+footer .fa {
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: #e8aa42;
+  border-radius: 50px;
+}
+
+#hati {
+  color: red;
+}
+
+/* responsif */
+@media screen and (max-width: 768px) {
+  /* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navUl {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .li {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+  } */
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navUl {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #e8aa42;
+  }
+
+  .navUl li {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  .navUl li a {
+    color: #025464;
+    font-size: larger;
+  }
+  
+  .navUl.active {
+    height: 170px;
+    color: #025464;
+  }
+
+  #logo {
+    text-align: center;
+  }
+
+  #logo img {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 140px;
+  }
+
+  #contentUtama {
+    margin: 15px 0;
+  }
+
+  #content {
+    margin-left: 0;
+  }
+
+  #listGame p {
+    text-align: justify;
+  }
+
+  .lihatLebih {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  #dataDiri {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pembuat1,
+  .pembuat2,
+  .pembuat3 {
+    width: 100%;
+  }
+}
