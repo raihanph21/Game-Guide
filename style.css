@@ -293,6 +293,10 @@ footer .fa {
     flex-direction: column;
   }
 
+  #dataDiri p {
+    margin-bottom: 20px;
+  }
+
   .pembuat1,
   .pembuat2,
   .pembuat3 {
