@@ -208,25 +208,6 @@ footer .fa {
 
 /* responsif */
 @media screen and (max-width: 768px) {
-  /* nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .navUl {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-
-  .li {
-    width: 30px;
-    height: 3px;
-    margin-bottom: 5px;
-  } */
-
   .navbar-toggle {
     display: flex;
   }
